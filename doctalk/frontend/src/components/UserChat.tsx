@@ -1,5 +1,6 @@
 "use client";
 
+
 import { FormEvent, Fragment, useState } from "react";
 import LoadingDots from "./LoadingDots";
 import ErrorBanner from "./ErrorBanner";
@@ -36,12 +37,13 @@ const UserChat = () => {
 
     if (!response.ok) {
       setError(true);
-    } else {
       setLoading(false);
-      setError(false);
+      throw new Error('Failed to fetch');
     }
-
     const chatAnswer = await response.json();
+    setLoading(false);
+    setError(false);
+    
 
     // set messages array to include latest question + answer
     setMessages([
