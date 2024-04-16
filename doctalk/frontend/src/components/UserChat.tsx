@@ -12,7 +12,7 @@ interface MessageProps {
 }
 
 const UserChat = () => {
-  const initialPrompt = "What is a vector database?";
+  const initialPrompt = "How do I initialize a Braze SDK?";
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState<MessageProps[]>([]);
   const [error, setError] = useState(false);
@@ -56,7 +56,7 @@ const UserChat = () => {
   return (
     <div className={`interactive ${questionSubmitted ? "condensed" : ""}`}>
       <Prompt
-        formLabel="Go for it, ask a question"
+        formLabel="Ask Me Anything"
         btnText="See response"
         size={questionSubmitted ? "sm" : "lg"}
         initialPrompt={initialPrompt}

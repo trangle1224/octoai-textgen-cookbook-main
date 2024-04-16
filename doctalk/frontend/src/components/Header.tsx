@@ -5,7 +5,7 @@ const Header = () => {
     <header className="container">
       <div>
         <div className="left">
-          <a href="/">📄 DocTalk</a>
+          <a href="/">📄 Q&A Help</a>
         </div>
         <div className="right">
           <a href="https://octo.ai/?utm_source=doctalk" target="_blank">
