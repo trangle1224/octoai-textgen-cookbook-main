@@ -1,6 +1,5 @@
 "use client";
 
-
 import { FormEvent, Fragment, useState } from "react";
 import LoadingDots from "./LoadingDots";
 import ErrorBanner from "./ErrorBanner";
@@ -13,7 +12,7 @@ interface MessageProps {
 }
 
 const UserChat = () => {
-  //const initialPrompt = "How do I initialize a Braze SDK?";
+  const initialPrompt = "What is a vector database?";
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState<MessageProps[]>([]);
   const [error, setError] = useState(false);
@@ -31,19 +30,18 @@ const UserChat = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        prompt: inputValue,
+        prompt: inputValue || initialPrompt,
       }),
     });
 
     if (!response.ok) {
-      //setError(true);
-      //setLoading(false);
-      throw new Error('Failed to fetch');
+      setError(true);
+    } else {
+      setLoading(false);
+      setError(false);
     }
+
     const chatAnswer = await response.json();
-    setLoading(false);
-    setError(false);
-    
 
     // set messages array to include latest question + answer
     setMessages([
@@ -58,7 +56,7 @@ const UserChat = () => {
   return (
     <div className={`interactive ${questionSubmitted ? "condensed" : ""}`}>
       <Prompt
-        formLabel="Ask Me Anything"
+        formLabel="Go for it, ask a question"
         btnText="See response"
         size={questionSubmitted ? "sm" : "lg"}
         initialPrompt={initialPrompt}
