@@ -13,7 +13,7 @@ interface MessageProps {
 }
 
 const UserChat = () => {
-  const initialPrompt = "How do I initialize a Braze SDK?";
+  //const initialPrompt = "How do I initialize a Braze SDK?";
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState<MessageProps[]>([]);
   const [error, setError] = useState(false);
@@ -31,14 +31,14 @@ const UserChat = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        prompt: inputValue || initialPrompt,
+        prompt: inputValue,
       }),
     });
 
     if (!response.ok) {
-      setError(true);
-      setLoading(false);
-      throw new Error('Failed to fetch');
+      //setError(true);
+      //setLoading(false);
+      throw new Error('Failed to fetch' + response);
     }
     const chatAnswer = await response.json();
     setLoading(false);
