@@ -38,7 +38,7 @@ const UserChat = () => {
     if (!response.ok) {
       //setError(true);
       //setLoading(false);
-      throw new Error('Failed to fetch' + response);
+      throw new Error('Failed to fetch');
     }
     const chatAnswer = await response.json();
     setLoading(false);
