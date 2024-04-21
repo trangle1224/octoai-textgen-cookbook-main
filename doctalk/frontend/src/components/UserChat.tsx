@@ -12,7 +12,7 @@ interface MessageProps {
 }
 
 const UserChat = () => {
-  const initialPrompt = "What is a vector database?";
+  const initialPrompt = "How do I initialize the Web SDK?";
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState<MessageProps[]>([]);
   const [error, setError] = useState(false);
@@ -56,8 +56,8 @@ const UserChat = () => {
   return (
     <div className={`interactive ${questionSubmitted ? "condensed" : ""}`}>
       <Prompt
-        formLabel="Go for it, ask a question"
-        btnText="See response"
+        formLabel="Ask me almost ANYTHING"
+        btnText="Submit"
         size={questionSubmitted ? "sm" : "lg"}
         initialPrompt={initialPrompt}
         inputValue={inputValue}
