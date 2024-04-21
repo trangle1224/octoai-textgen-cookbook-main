@@ -11,12 +11,6 @@ const Footer = () => {
                 href="https://github.com/octoml/octoai-textgen-cookbook/tree/main/doctalk/frontend"
                 target="_blank"
               >
-                <Image
-                  src="/icons/github.svg"
-                  alt="Github Icon"
-                  width="18"
-                  height="18"
-                />
 
               </a>
             </li>

@@ -56,7 +56,7 @@ const UserChat = () => {
   return (
     <div className={`interactive ${questionSubmitted ? "condensed" : ""}`}>
       <Prompt
-        formLabel="Ask me almost ANYTHING"
+        formLabel=""
         btnText="Submit"
         size={questionSubmitted ? "sm" : "lg"}
         initialPrompt={initialPrompt}

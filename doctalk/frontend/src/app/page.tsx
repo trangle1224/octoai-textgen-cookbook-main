@@ -5,13 +5,13 @@ export default function Home() {
     <main className="container flex-height">
       <div className="hero">
         <h1>
-          Searching Docs is Easy!
+          Ask a question about Braze!
         </h1>
       </div>
       <GeneratedImage />
       <div>
         <p className="credit">
-          {" "} Docs
+          {" "}  
           <a href="https://www.braze.com/docs" target="_blank">
             Braze
           </a>{" "}
