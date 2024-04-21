@@ -24,7 +24,6 @@ const Footer = () => {
           <ul>
             <li className="multilink">
               <a href="https://www.pinecone.io/" target="_blank">
-                and Pinecone
               </a>
             </li>
             <li>
@@ -32,7 +31,6 @@ const Footer = () => {
                 href="https://octo.ai/legals/privacy-policy/?utm_source=doctalk"
                 target="_blank"
               >
-                Privacy Policy
               </a>
             </li>
             <li>
@@ -40,7 +38,6 @@ const Footer = () => {
                 href="https://octo.ai/legals/terms-of-use/?utm_source=doctalk"
                 target="_blank"
               >
-                Terms of Use
               </a>
             </li>
           </ul>

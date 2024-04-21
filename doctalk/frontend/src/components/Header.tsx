@@ -7,17 +7,6 @@ const Header = () => {
         <div className="left">
           <a href="/">📄 Q&A Help</a>
         </div>
-        <div className="right">
-          <a href="https://octo.ai/?utm_source=doctalk" target="_blank">
-            <span>powered by</span>
-            <Image
-              src="/icons/octo.svg"
-              alt="OctoAI Icon"
-              width="22"
-              height="24"
-            />
-          </a>
-        </div>
       </div>
     </header>
   );

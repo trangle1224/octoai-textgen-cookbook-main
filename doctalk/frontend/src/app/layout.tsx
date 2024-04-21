@@ -3,7 +3,7 @@ import "../styles/main.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const siteTitle = "DocTalk | Powered by OctoAI + Pinecone";
+const siteTitle = "Benji RAG App";
 const siteDescription = "Create your own RAG chat application";
 const socialShare = "/images/social-share.png";
 
