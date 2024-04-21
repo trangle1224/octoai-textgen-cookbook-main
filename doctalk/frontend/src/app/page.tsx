@@ -11,7 +11,7 @@ export default function Home() {
       <GeneratedImage />
       <div>
         <p className="credit">
-          This demo is using docs from{" "}
+          {" "} Docs
           <a href="https://www.braze.com/docs" target="_blank">
             Braze
           </a>{" "}
