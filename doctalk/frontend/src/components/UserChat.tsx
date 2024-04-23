@@ -26,8 +26,8 @@ const UserChat = () => {
 
     console.log(`${process.env.API_ENDPOINT}`);
     console.log(`${process.env.API_KEY}`);
-    console.log(`hellow`);
-    
+    console.log(`hellllo`);
+
     const response = await fetch("/api/ask", {
       method: "POST",
       headers: {
@@ -37,7 +37,7 @@ const UserChat = () => {
         prompt: inputValue || initialPrompt,
       }),
     });
-
+    console.log(response);
     if (!response.ok) {
       setError(true);
     } else {

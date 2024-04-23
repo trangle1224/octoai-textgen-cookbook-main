@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
 
   console.log(`${process.env.API_ENDPOINT}`);
   console.log(`${process.env.API_KEY}`);
-  console.log(`hellow`);
+  console.log(`hello`);
 
   try {
 
