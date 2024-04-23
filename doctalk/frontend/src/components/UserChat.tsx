@@ -24,6 +24,10 @@ const UserChat = () => {
     setLoading(true);
     setQuestionSubmitted(true);
 
+    console.log(`${process.env.API_ENDPOINT}`);
+    console.log(`${process.env.API_KEY}`);
+    console.log(`hellow`);
+    
     const response = await fetch("/api/ask", {
       method: "POST",
       headers: {
