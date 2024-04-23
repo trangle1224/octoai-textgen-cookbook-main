@@ -2,10 +2,15 @@ import { NextRequest } from "next/server";
 
 export const maxDuration = 10;
 
+
 export async function POST(request: NextRequest) {
+
+  console.log(`${process.env.API_ENDPOINT}`);
+  console.log(`${process.env.API_KEY}`);
+  console.log(`hellow`);
+
   try {
-    console.log(`${process.env.API_ENDPOINT}`);
-    console.log(`${process.env.API_KEY}`);
+
 
     const data = await request.json();
     const response = await fetch(`${process.env.API_ENDPOINT}`, {
