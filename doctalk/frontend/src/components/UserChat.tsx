@@ -28,7 +28,7 @@ const UserChat = () => {
     console.log(`${process.env.API_KEY}`);
     console.log(`hellllo`);
 
-    const response = await fetch("/src/app/api/ask", {
+    const response = await fetch("/api/ask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

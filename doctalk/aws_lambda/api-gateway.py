@@ -4,7 +4,7 @@ import boto3
 apigateway = boto3.client("apigateway")
 lambda_client = boto3.client("lambda", region_name="us-east-2")
 
-LAMBDA_ARN = "arn:aws:lambda:us-east-2:975050031141:function:qandalambda" # FIXME: Update me once you've created the lambda!
+LAMBDA_ARN = "arn:aws:lambda:us-east-2:975050031141:function:doctalkfunction" # FIXME: Update me once you've created the lambda!
 API_NAME = "MyAPI"
 STAGE_NAME = "prod"
 RESOURCE_PATH = "doctalk"
